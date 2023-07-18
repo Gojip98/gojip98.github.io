@@ -659,43 +659,43 @@ footer {
 
 #skillsProBar.htmlBar {
   transform: translateX(-20%);
-  transition: 2s;
+  transition: 1s;
   transition-delay: 1.4s;
 }
 
 #skillsProBar.cssBar {
   transform: translateX(-26.6%);
-  transition: 2s;
+  transition: 1s;
   transition-delay: 1.4s;
 }
 
 #skillsProBar.jqBar {
   transform: translateX(-60%);
-  transition: 2s;
+  transition: 1s;
   transition-delay: 1.4s;
 }
 
 #skillsProBar.jsBar {
-  transform: translateX(-73.35%);
-  transition: 2s;
+  transform: translateX(-79.9%);
+  transition: 1s;
   transition-delay: 1.4s;
 }
 
 #skillsProBar.aiBar {
   transform: translateX(-26.6%);
-  transition: 2s;
+  transition: 1s;
   transition-delay: 1.4s;
 }
 
 #skillsProBar.psBar {
   transform: translateX(-33.2%);
-  transition: 2s;
+  transition: 1s;
   transition-delay: 1.4s;
 }
 
 #skillsProBar.idBar {
   transform: translateX(-66.75%);
-  transition: 2s;
+  transition: 1s;
   transition-delay: 1.4s;
 }
 
