@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Swiper demo</title>
+  <link rel="stylesheet" href="../css/slick.css">
+  <link rel="stylesheet" href="../css/slick-theme.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+
+</head>
+
+<style>
+
+  .box{background-color: aqua;margin: 150px;}
+  .box a img{width: 100%;height: 100%;margin: 100px;}
+</style>
+<body>
+
+<div class="Bbox slider">
+    <div class="box"><a href="#"><img src="../img/slide_card_01.jpg"width="450px" height="600px" alt=""></a></div>
+    <div class="box"><a href="#"><img src="../img/slide_card_02.jpg"width="450px" height="600px" alt=""></a></div>
+    <div class="box"><a href="#"><img src="../img/slide_card_03.jpg"width="450px" height="600px" alt=""></a></div>
+    <div class="box"><a href="#"><img src="../img/slide_card_04.jpg" width="450px" height="600px" alt=""></a></div>
+  </div>
+
+<script src="../js/jquery-3.7.0.min.js"></script>
+<script src="../js/slick.js"></script>
+<script>
+  $('.Bbox').slick({
+  centerMode: true,
+  centerPadding: '60px',
+  slidesToShow: 3,
+  responsive: [
+    {
+      breakpoint: 768,
+      settings: {
+        arrows: false,
+        centerMode: true,
+        centerPadding: '40px',
+        slidesToShow: 3
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        arrows: false,
+        centerMode: true,
+        centerPadding: '40px',
+        slidesToShow: 1
+      }
+    }
+  ]
+});
+</script>
+</body>
+</html>

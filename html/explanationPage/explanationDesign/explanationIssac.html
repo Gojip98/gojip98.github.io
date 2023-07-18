@@ -1,0 +1,431 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../../css/ani_cheet_sheet.css" />
+    <link rel="stylesheet" href="../../../css/font.css" />
+    <link rel="stylesheet" href="../../../css/reset.css" />
+
+    <script src="../../../js/jq/jquery-3.7.0.min.js"></script>
+    <script src="../../../js/explanationPage/explanationDesign/explanationDesignNamecard.js" defer></script>
+
+    <script src="https://kit.fontawesome.com/fb27592f06.js" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/vivus@latest/dist/vivus.min.js"></script>
+
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Agdasima:wght@400;700&family=Raleway:ital,wght@0,100;0,200;0,500;0,600;0,700;0,800;1,100;1,500&display=swap");
+        @import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap");
+        @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+        @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css");
+
+
+        /* outline */
+        body {
+            font-family: 'Rubik', sans-serif;
+
+            background-color: #212121;
+            color: #eaeaea;
+        }
+
+        .section {
+            position: relative;
+            margin: 0 auto;
+        }
+
+        ::-webkit-scrollbar {
+            width: 0px;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background-color: #fff;
+            border-radius: 1px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background-color: #efefef;
+        }
+
+        .fp-watermark {
+            display: none;
+        }
+
+        /* fixed Nav */
+        #menuNav {
+            overflow: hidden;
+            position: fixed;
+            z-index: 99999;
+            top: 10px;
+            left: 270px;
+        }
+
+        #menuNav #menuList {}
+
+        #menuNav #menuList li {
+            float: left;
+        }
+
+        #menuNav #menuList li a {
+            font-family: "Agdasima", sans-serif;
+            font-size: 25px;
+            padding: 5px 5px;
+            margin: 0 15px;
+            transition: 0.25s;
+        }
+
+        #menuNav #menuList li p {
+            font-size: 23px;
+            line-height: 32px;
+            color: #919191;
+        }
+
+        #menuNav #menuList li:nth-child(6) a {
+            color: #f589cc;
+        }
+
+        #menuNav #menuList li:nth-child(6) a:hover {
+            color: #f854b9;
+            border-bottom: 1px solid #f854b9;
+            box-sizing: border-box;
+        }
+
+        #menuNav #menuList li a:hover {
+            color: #f99b22;
+            border-bottom: 1px solid #f99b22;
+            box-sizing: border-box;
+        }
+
+        .menuNavColor {
+            color: #f97822;
+            border-bottom: 1px solid #f97822;
+            box-sizing: border-box;
+        }
+
+        /* layout ---------------------*/
+
+
+        /* section00 */
+
+        #section00Container {
+            overflow: hidden;
+            width: 1920px;
+            height: 900px;
+            margin: 0 auto;
+        }
+
+        #section00Container img {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            top: 250px;
+        }
+
+
+        .subSlideUp {
+            animation: subSlideUp 2s ease-in forwards;
+            opacity: 0;
+            animation-delay: 0.3s;
+        }
+
+
+        @keyframes subSlideUp {
+            0% {
+                opacity: 0;
+            }
+
+            80% {
+                opacity: 1;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+
+
+        #section00 .scrollDown {
+            position: absolute;
+            bottom: 2.8%;
+            left: 48.1%;
+            transform: translateX(-50%);
+            overflow: hidden;
+        }
+
+        #section00 .scrollDown p {
+            text-align: center;
+            font-family: "Agdasima", sans-serif;
+            font-size: 20px;
+            color: white;
+            line-height: 30px;
+            -webkit-animation: scrollSquat 2.8s ease-in forwards;
+            animation: scrollSquat 2.8s ease-in forwards;
+        }
+
+        @-webkit-keyframes scrollSquat {
+            0% {
+                opacity: 0;
+            }
+
+            85% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 0.7;
+            }
+        }
+
+        @keyframes scrollSquat {
+            0% {
+                opacity: 0;
+            }
+
+            85% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 0.7;
+            }
+        }
+
+        /* contents -------------------------------------------------------*/
+
+        #contents {
+            width: 100%;
+        }
+
+        #contentsContainer {
+            width: 1100px;
+            position: relative;
+            height: 1850px;
+            margin: 0 auto;
+        }
+
+        #contentsTitle {
+            position: absolute;
+            top: 195px;
+            left: 50%;
+            transform: translateX(-50%);
+            color: #45b649;
+            font-size: 30px;
+        }
+
+        #contentsTitle p {
+            text-align: center;
+            line-height: 30px;
+        }
+
+
+        #doctorBoxCover {
+            position: absolute;
+            top: 300px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        #doctorBox {
+            position: relative;
+            width: 1100px;
+            height: 330px;
+            overflow: hidden;
+        }
+
+        #drname {
+            text-align: center;
+            position: absolute;
+            top: 113px;
+            left: 355px;
+            font-size: 14px;
+            color: #498f4b;
+        }
+
+        #doctor {
+            position: absolute;
+            left: 0;
+            width: 324px;
+            height: 330px;
+            background-image: url(../../../img/subPage/explanationPage/gif/doctor01.png);
+            background-size: 100%;
+            background-repeat: no-repeat;
+            bottom: 0;
+            animation: drgif 0.6s infinite;
+            animation-delay: 1.25s;
+        }
+
+        @keyframes drgif {
+            0% {}
+
+            49% {
+                background-image: url(../../../img/subPage/explanationPage/gif/doctor01.png);
+            }
+
+            50% {
+                background-image: url(../../../img/subPage/explanationPage/gif/doctor02.png);
+            }
+
+            99% {
+                background-image: url(../../../img/subPage/explanationPage/gif/doctor02.png);
+            }
+
+            100% {
+                background-image: url(../../../img/subPage/explanationPage/gif/doctor01.png);
+            }
+        }
+
+        #doctorTextBox {
+            position: absolute;
+            right: 0;
+            width: 784px;
+            height: 330px;
+            background-image: url(../../../img/subPage/explanationPage/textBox.png);
+            background-size: 100%;
+            background-repeat: no-repeat;
+            bottom: -47px;
+        }
+
+        #drTextBox {
+            position: absolute;
+            margin: 15px;
+            top: 85px;
+        }
+
+        .drtext {
+            display: inline;
+            vertical-align: middle;
+            border-right: 0.05em solid #45b649;
+            color: #45b649;
+            font-size: 15px;
+            animation: cursor 0.2s ease infinite;
+            line-height: 20px;
+        }
+
+
+        /* Link */
+        .good img {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .good img:nth-child(1) {
+            top: 800px;
+        }
+        .good img:nth-child(2) {
+            top: 1100px;
+        }
+        .good img:nth-child(3) {
+            top: 1400px;
+        }
+
+
+
+
+
+
+
+        /* footer ---------------------------------------------------------*/
+        footer {
+            position: absolute;
+            width: 100%;
+            height: 3%;
+            bottom: 0;
+        }
+
+        #footcon {
+            position: relative;
+        }
+
+        footer p {
+            font-size: 15px;
+            bottom: 35px;
+            left: 50%;
+            transform: translateX(-50%);
+            position: absolute;
+            color: #f47522;
+        }
+    </style>
+
+    <title>천동유 포트폴리오</title>
+</head>
+
+<body>
+
+    <!-- header --------------------------------------------->
+    <header>
+        <div id="menuNav">
+            <ul id="menuList">
+                <li><a href="../../../index.html#mainpage">HOME</a></li>
+                <li><a href="../../../index.html#profile">PROFILE</a></li>
+                <li><a href="../../../index.html#works">PORTFOLIO</a></li>
+                <li><a href="../../../index.html#contact">CONTACT</a></li>
+                <li>
+                    <p>ㅣ</p>
+                </li>
+                <li><a href="../../../html/designSubPage.html#subPageWorks">BACK</a></li>
+            </ul>
+
+
+        </div>
+    </header>
+
+    <!-- contents ------------------------------------------>
+    <div id="contents">
+        <div id="contentsContainer">
+            <div id="contentsTitle">
+                <p>이삭토스트 배너디자인</p>
+            </div>
+            <div id="doctorBoxCover">
+                <div id="drname">
+                    <p>Dr. 파브리샤</p>
+                </div>
+                <div id="doctorBox">
+                    <div id="doctor"></div>
+                    <div id="doctorTextBox">
+                        <div id="drTextBox">
+                            <div class="drtext"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="good">
+                <img src="../../../img/mokup/Visual/banner/issac/issac01.png" width="700px" alt="">
+                <img src="../../../img/mokup/Visual/banner/issac/issac02.png" width="700px" alt="">
+                <img src="../../../img/mokup/Visual/banner/issac/issac03.png" width="700px" alt="">
+            </div>
+
+            <footer>
+                <p>©2023. Cheon Dong Yu. All rights reserved.</p>
+            </footer>
+        </div>
+    </div>
+
+    <!-- footer --------------------------------------------->
+
+</body>
+<script>
+
+    const $text = document.querySelector(".drtext");
+    const letters = [
+        "이 작품은 '이삭토스트의 배너라면 어떤 식으로 광고를 할까' 하고 상상하며 포토샵의 사진편집 작업으로 웹 배너광고를 만들어 본 것입니다."
+    ];
+    const speed = 50;
+    let i = 0;
+    const typing = async () => {
+        const letter = letters[i].split("");
+
+        while (letter.length) {
+            await wait(speed);
+            $text.innerHTML += letter.shift();
+        }
+        await wait(800);
+        remove();
+    }
+    function wait(ms) {
+        return new Promise(res => setTimeout(res, ms))
+    }
+    setTimeout(typing, 1500);
+</script>
+
+</html>
