@@ -63,7 +63,7 @@ $(".usb p").each(function (index) {
           .children("p")
           .addClass("skillsDetailFade")
           .html(
-            "라이브러리를 통한 웹페이지 동적 이벤트</br>구현 가능</br></br>라이브러리를 통한 웹페이지 레이아웃,</br>시각적 요소 강화 가능</br></br>jQuery 문법을 이용한 조건부 탭메뉴</br>구현 가능"
+            "플러그인을 활용한 웹페이지 동적 이벤트</br>구현 가능</br></br> 플러그인을 활용한 웹페이지 레이아웃,</br>시각적 요소 강화 구현 가능</br></br>jQuery 문법을 이용한 조건부 탭메뉴</br>구현 가능"
           );
       } else if (ind == 3) {
         $("#skillsProBar").addClass("jsBar");
@@ -73,7 +73,7 @@ $(".usb p").each(function (index) {
           .children("p")
           .addClass("skillsDetailFade")
           .html(
-            "hasclass를 활용한 조건부 토글형 메뉴</br>구현 가능</br></br>JavaScript 문법을 활용한 조건부 탭메뉴</br>구현 가능"
+            "라이브러리를 활용한 웹페이지 동적이벤트 </br>구현 가능</br></br>웹페이지 시각적 요소 강화 구현 가능"
           );
       } else if (ind == 4) {
         $("#skillsProBar").addClass("aiBar");
